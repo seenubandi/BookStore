@@ -1,0 +1,54 @@
+
+<div class = "bg-container">
+    <div class = "header-container">
+        <div>
+            <a href="./header" class = "btn btn-primary ml-1 home">Home</a>
+        </div>
+        <div class = "header-left">
+            <a class = "btn btn-primary ml-3" (click) = 'makeKids()'>Kids Entertainment</a>
+            <a   class = "btn btn-primary ml-1" (click) = 'makePhilosophy()'> Philosophy books</a>
+            <a class = "btn btn-primary ml-1" (click) = 'makeFaqs()'>Help Required</a>
+            <a href = "./login" class = "btn btn-light ml-1 log">Log out</a>
+        </div>
+        
+    </div>
+    <div class = "images p-3">
+        <div *ngIf = 'kids' class = "img-container">
+            <img src = "../assets/bookstore/harry.jpg" class = "image"/>
+            <img src = "../assets/bookstore/brain.jpg" class = "image"/>
+            <img src = "../assets/bookstore/harry.jpg" class = "image"/>
+            <img src = "../assets/bookstore/harry.jpg" class = "image"/>
+            <img src = "../assets/bookstore/brain.jpg" class = "image"/>
+            <img src = "../assets/bookstore/harry.jpg" class = "image"/>
+            <img src = "../assets/bookstore/harry.jpg" class = "image"/>
+            <img src = "../assets/bookstore/brain.jpg" class = "image"/>
+            <img src = "../assets/bookstore/harry.jpg" class = "image"/>
+        </div>
+    </div>
+    <div class = "images p-3">
+        <div *ngIf = 'philosophy' class = "img-container">
+            <img src = "../assets/bookstore/men1.jpg" class = "image"/>
+            <img src = "../assets/bookstore/men2.jpg" class = "image"/>
+            <img src = "../assets/bookstore/men3.jpg" class = "image"/>
+            <img src = "../assets/bookstore/men1.jpg" class = "image"/>
+            <img src = "../assets/bookstore/men2.jpg" class = "image"/>
+            <img src = "../assets/bookstore/men3.jpg" class = "image"/>
+            <img src = "../assets/bookstore/men1.jpg" class = "image"/>
+            <img src = "../assets/bookstore/men2.jpg" class = "image"/>
+            <img src = "../assets/bookstore/men3.jpg" class = "image"/>
+        </div>
+    </div>
+    <div class = "images p-3">
+        <div *ngIf = 'faqs' class = "faqs" style="color:black">
+            <h1>How This Purchase books Runs actually?</h1>
+            <h1>How To Purchase books?</h1>
+            <h1>What is the validity of books purchased?</h1>
+            <h1>How This Purchase books Runs actually?</h1>
+            <h1>How To Purchase books?</h1>
+            <h1>What is the validity of books purchased?</h1>
+            <h1>How This Purchase books Runs actually?</h1>
+            <h1>How To Purchase books?</h1>
+            <h1>What is the validity of books purchased?</h1>
+        </div>
+    </div>
+</div>
