@@ -29,8 +29,8 @@ export class LoginPageComponent {
     this.password1 = m
   }
   checkMobile() {
-    if (this.mobileNumber.length !== 10) {
-      this.mobileErrMsg = "Mobile no must be 10 digits"
+    if (this.mobileNumber.length === 0) {
+      this.mobileErrMsg = "Enter a valid number"
 
     } else {
       this.mobileErrMsg = ""
@@ -44,11 +44,20 @@ export class LoginPageComponent {
     }
   }
   isLog() {
-    this.checkMobile;
-    this.changePassword;
-    if (this.password1.length == 0||this.mobileNumber.length !== 10) {
+    if (this.password1.length == 0) {
+      this.passwordErrMsg = "Enter a valid PassWord"
+    } else {
+      this.passwordErrMsg = ""
+    }
+
+    if (this.mobileNumber.length === 0) {
+      this.mobileErrMsg = "Enter a valid number"
 
     } else {
+      this.mobileErrMsg = ""
+    }
+    
+    if (!(this.password1.length == 0||this.mobileNumber.length !== 10)) {
       this.link = "../header"
     }
   }

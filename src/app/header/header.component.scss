@@ -8,9 +8,12 @@
     flex-direction: row;
     justify-content: space-around;
 }
+.bg{
+    background-color: orange;
+}
 .bg-container{
-    height: 150vh;
-    padding-top: 5%;
+    min-height: 100vh;
+    padding-top: 1%;
     background-image: url('../assets/bookstore/library4.jpg');
     background-size: cover;
 }
@@ -18,29 +21,81 @@
     margin: 0px 30px;
     height: 40px;
     width: 200px;
+    margin-top:60px;
 }
 .home{
     margin: 0px 30px;
     height: 40px;
     width: 130px;
+    margin-top:60px;
 }
+
 .log{
     margin: 0px 30px;
     height: 40px;
     width: 130px;
+    margin-top: 60px;
 }
 .img-container{
     margin-left:30%;
 }
 .image{
     margin:30px;
-    width:200px;
-    height:200px;
+    width:170px;
+    height:170px;
 }
 .faqs{
     margin-left: 30%;
     h1{
         text-decoration: underline;
-        background-color: yellow;
+        background-color: rgb(241, 240, 238);
+        color:rgb(10, 10, 247);
+        padding:9px;
+        font-size: 23px;
+        height:50px;
+        border-radius: 3px;
+        span{
+            cursor: pointer;
+            
+        }
+        span:hover{
+            color:lightblue;
+        }
     }
+}
+.logo{
+    background-color: rgba(153,172,187,255);
+    color:rgb(253, 253, 254);
+    font-style: italic;
+    padding:10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-size:40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.mat-head{
+    background-color: rgb(237, 233, 188);
+    margin: 20px 170px 20px 50px;
+    
+    padding:10px;
+    .h1{
+        color: rgb(38, 38, 192);
+        margin:20px;
+        font-size:25px;
+        text-decoration: underline;
+    }
+    .p1{
+        margin:20px;
+    }
+    mat-card-header:hover{
+        color: lightblue;
+    }
+    mat-card-header{
+        cursor: pointer;
+    }
+    
+}
+.side{
+    height:100px;
+    width:100px;
 }

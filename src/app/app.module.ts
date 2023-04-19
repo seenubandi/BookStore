@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AnsweresService } from './answeres.service';
 import { RouterModule,Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +15,10 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { CheckPasswordComponent } from './check-password/check-password.component';
 import {CredentialsService} from './credentials.service';
 import { KidsComponent } from './kids/kids.component';
+import { FaqsAnswersComponent } from './faqs-answers/faqs-answers.component';
+import { FaqsComponent } from './faqs/faqs.component';
+
+
 
 const routes:Routes = [
   
@@ -28,6 +33,8 @@ const routes:Routes = [
     SignUpComponent,
     CheckPasswordComponent,
     KidsComponent,
+    FaqsAnswersComponent,
+    FaqsComponent
     
   ],
   imports: [
@@ -38,7 +45,7 @@ const routes:Routes = [
     RouterModule.forRoot(routes),
     BrowserAnimationsModule
   ],
-  providers: [CredentialsService],
+  providers: [AnsweresService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

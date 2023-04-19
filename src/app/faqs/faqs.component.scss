@@ -1,0 +1,30 @@
+.bg-container{
+    background-color: rgb(252, 249, 249);
+    padding:5%;
+    .top-head{
+        margin-left: 20px;
+        margin-bottom:30px;
+        background-color: rgb(252, 251, 250);
+        padding:5px;
+        text-decoration: underline;
+        color: rgb(28, 28, 189);
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .card{
+        background-color: aliceblue;
+        margin:20px;
+        h1{
+            background-color: aqua;
+            font-size: 27px;
+            padding:5px;
+        }
+        p{
+            background-color: azure;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding:5px;
+            font-size:20px;
+            margin-left: 5px;
+        }
+    }
+}

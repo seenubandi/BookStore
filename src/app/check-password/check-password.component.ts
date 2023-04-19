@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import {CredentialsService} from '../credentials.service'
 import { JsonPipe } from '@angular/common';
-
+import { AnsweresService } from '../answeres.service';
+AnsweresService
 @Component({
   selector: 'app-check-password',
   templateUrl: './check-password.component.html',
@@ -9,11 +10,10 @@ import { JsonPipe } from '@angular/common';
 })
 export class CheckPasswordComponent {
 
-  mobileNumber:any
-  
-  constructor(private ts:CredentialsService) {
-
+  constructor(private newService: AnsweresService ){}
+  ngOnInit() {
+    console.log(this.newService.success)
+    console.log(this.newService.answeres)
   }
-  PasswordsList:any = this.ts.Credentials
 
 }

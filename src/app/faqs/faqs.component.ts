@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: 'app-faqs',
+  templateUrl: './faqs.component.html',
+  styleUrls: ['./faqs.component.scss']
 })
-export class HeaderComponent {
-
+export class FaqsComponent {
   philosophy=false;
   kids = false; 
   faqs = true;
@@ -68,7 +67,5 @@ export class HeaderComponent {
       "question":"How payment process works in purchase books?"
     }
   ]
-
-  
 
 }

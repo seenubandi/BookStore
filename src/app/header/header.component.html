@@ -2,15 +2,32 @@
 <div class = "bg-container">
     <div class = "header-container">
         <div>
-            <a href="./header" class = "btn btn-primary ml-1 home">Home</a>
+            <h1 href="./header" class = "logo">Purchase Books</h1>
         </div>
         <div class = "header-left">
-            <a class = "btn btn-primary ml-3" (click) = 'makeKids()'>Kids Entertainment</a>
-            <a   class = "btn btn-primary ml-1" (click) = 'makePhilosophy()'> Philosophy books</a>
-            <a class = "btn btn-primary ml-1" (click) = 'makeFaqs()'>Help Required</a>
-            <a href = "./login" class = "btn btn-light ml-1 log">Log out</a>
+            <a class = "btn btn-primary ml-1 home" [class.bg]="home" (click) = "makeHome()">Home</a>
+            <a class = "btn btn-primary ml-3" [class.bg]="kids"  (click) = 'makeKids()'>Kids Entertainment</a>
+            <a   class = "btn btn-primary ml-1" [class.bg]="philosophy"  (click) = 'makePhilosophy()'> Philosophy books</a>
+            <a class = "btn btn-primary ml-1" [class.bg]="faqs"  (click) = 'makeFaqs()'>Help Required</a>
+            <a href = "./" class = "btn btn-light ml-1 log">Log out</a>
         </div>
         
+    </div>
+    <div class = "images p-3">
+        <div *ngIf = 'home' class = "faqs" style="color:black">
+            <mat-card  class = "mat-head" >
+                <mat-card-header (click) = "makeKids()" class = "h1">Kids Entertainment</mat-card-header>
+                <mat-card-content class = "p1">Now a days Kids are only focussing on electronic devices, rather than on books. Having a habit like  reading books from child hood helps in increase of creativity, imagination and lively hood of particular human being. </mat-card-content>
+            </mat-card>
+            <mat-card  class = "mat-head" >
+                <mat-card-header (click) = "makePhilosophy()" class = "h1">Philosophy Books</mat-card-header>
+                <mat-card-content class = "p1">If we observe deeply our life, there will be nothing but emptyness. One should approach a philosopher to make his life somewhat philosophical. By reading books also we can make that thing possible without meeting a philopher.</mat-card-content>
+            </mat-card>
+            <mat-card class = "mat-head" >
+                <mat-card-header (click) = "makeFaqs()" class = "h1">Having Trouble? ->> check faqs</mat-card-header>
+                <mat-card-content class = "p1">If we are facing any trouble while on going through site or having any doubts about what we are actually providing please check faqs page to rectify your doubts.</mat-card-content>
+            </mat-card> 
+        </div>
     </div>
     <div class = "images p-3">
         <div *ngIf = 'kids' class = "img-container">
@@ -38,17 +55,9 @@
             <img src = "../assets/bookstore/men3.jpg" class = "image"/>
         </div>
     </div>
-    <div class = "images p-3">
-        <div *ngIf = 'faqs' class = "faqs" style="color:black">
-            <h1>How This Purchase books Runs actually?</h1>
-            <h1>How To Purchase books?</h1>
-            <h1>What is the validity of books purchased?</h1>
-            <h1>How This Purchase books Runs actually?</h1>
-            <h1>How To Purchase books?</h1>
-            <h1>What is the validity of books purchased?</h1>
-            <h1>How This Purchase books Runs actually?</h1>
-            <h1>How To Purchase books?</h1>
-            <h1>What is the validity of books purchased?</h1>
+    <div class = "images p-3" routerLink="../faqs-answers">
+        <div *ngIf = 'faqs' class = "faqs">
+            <h1 class = "anchor"*ngFor = "let faq of faqsArray" ><span><a>{{faq.question}}</a></span></h1>
         </div>
     </div>
 </div>

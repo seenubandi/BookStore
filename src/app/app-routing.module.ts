@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { CheckPasswordComponent } from './check-password/check-password.component';
 import { KidsComponent } from './kids/kids.component';
+import { FaqsAnswersComponent } from './faqs-answers/faqs-answers.component';
+import { FaqsComponent } from './faqs/faqs.component';
 
 
 const routes: Routes = [
@@ -26,6 +28,12 @@ const routes: Routes = [
   },
   {
     path:"kids",component:KidsComponent
+  },
+  {
+    path:"faqs-answers",component:FaqsAnswersComponent
+  },
+  {
+    path:"faqs",component:FaqsComponent
   },
   
 

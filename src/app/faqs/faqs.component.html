@@ -1,0 +1,20 @@
+
+<div class = "bg-container">
+    <div class = "images p-3" routerLink="../faqs-answers">
+        <div *ngIf = 'faqs' class = "faqs">
+            <h1 class = "anchor"*ngFor = "let faq of faqsArray" >
+                <span><a>{{faq.question}}</a></span>
+                <!-- <app-faqs-answers></app-faqs-answers> -->
+            </h1>
+            <!-- <h1>How This Purchase books Runs actually?</h1>
+            <h1>How To Purchase books?</h1>
+            <h1>What is the validity of books purchased?</h1>
+            <h1>How This Purchase books Runs actually?</h1>
+            <h1>How To Purchase books?</h1>
+            <h1>What is the validity of books purchased?</h1>
+            <h1>How This Purchase books Runs actually?</h1>
+            <h1>How To Purchase books?</h1>
+            <h1>What is the validity of books purchased?</h1> -->
+        </div>
+    </div>
+</div>
