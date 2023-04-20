@@ -1,8 +1,8 @@
 <div class = "bg-container">
     <h1 class = "top-head">Most Asked questions about purchase books</h1>
     <div class = "card" *ngFor = "let faq of faqsArray; index as index">
-        <h1>{{index+1}} {{faq.question}}</h1>
+        <h1>{{index+1}}. {{faq.question}}</h1>
         <p>{{faq.answere}}</p>
     </div>
-    <button class = "btn btn-primary" routerLink="../header">Back to Home ⤶</button>
+    <button class = "btn btn-primary" routerLink="../header" (click) = "makeBack()">Back to Home ⤶</button>
 </div>

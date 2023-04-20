@@ -1,16 +1,35 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { AnsweresService } from '../answeres.service';
+AnsweresService
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+
+  constructor(private As : AnsweresService ) {
+
+  }
+
+  fa = this.As.backPage
+
+  ngOnInit(): void {
+    if (this.fa) {
+      this.philosophy=false;
+  this.kids = false; 
+  this.faqs = true;
+  this.home = false;
+    }
+  }
 
   philosophy=false;
   kids = false; 
-  faqs = true;
-  home = false;
+  faqs = false;
+  home = true;
+
+
 
   makePhilosophy() {
     this.philosophy = true 

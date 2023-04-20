@@ -9,7 +9,9 @@
     justify-content: space-around;
 }
 .bg{
-    background-color: orange;
+    background-color: yellow;
+    color: black;
+    border: none;
 }
 .bg-container{
     min-height: 100vh;
@@ -20,21 +22,20 @@
 .btn-primary{
     margin: 0px 30px;
     height: 40px;
-    width: 200px;
-    margin-top:60px;
+    width: 180px;
+    padding-bottom: 5px;
 }
 .home{
     margin: 0px 30px;
     height: 40px;
-    width: 130px;
-    margin-top:60px;
+    width: 100px;
+    padding-bottom: 4px;
 }
 
 .log{
     margin: 0px 30px;
     height: 40px;
     width: 130px;
-    margin-top: 60px;
 }
 .img-container{
     margin-left:30%;
@@ -74,7 +75,7 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .mat-head{
-    background-color: rgb(237, 233, 188);
+    background-color: white;
     margin: 20px 170px 20px 50px;
     
     padding:10px;
@@ -98,4 +99,10 @@
 .side{
     height:100px;
     width:100px;
+}
+.kids{
+    background-color: white;
+    padding:30px;
+    width:49vw;
+    margin-left: 33vw;
 }

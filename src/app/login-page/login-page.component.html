@@ -1,12 +1,12 @@
 
 <div class = "bg-container">
     <mat-card class = "mat-card">
-        <h1 class = "heading">Log In Here</h1>
+        <h1 class = "heading">Log In </h1>
         
-        <input type = "text" class = "text form-control" placeholder="Enter your Mobile Number Here" (input)="changeMobile(mobile.value)" [value] = mobileNumber #mobile (blur)="checkMobile()">
+        <input matInput type = "text" class = "text form-control" placeholder="Enter your Mobile Number" (input)="changeMobile(mobile.value)" [value] = mobileNumber #mobile (blur)="checkMobile()">
         <p >{{mobileErrMsg}}</p>
        
-        <input type = "password"   id = "password"class = "text form-control" placeholder="Enter your Password Here" (input)="changePassword(password.value)" [value] = password1 #password (blur)="checkPassword()">
+        <input matInput type = "password"   id = "password"class = "text form-control" placeholder="Enter your Password" (input)="changePassword(password.value)" [value] = password1 #password (blur)="checkPassword()">
         <p>{{passwordErrMsg}}</p>
         <a routerLink = '../header' mat-raised-button color="primary" (click) = "isLog()">Login</a>
         <div class = "container d-flex flex-row mt-4">
@@ -14,5 +14,6 @@
             <!-- <a routerLink="/checkPassword" color="primary">Forgot Password</a> -->
         </div>
         
-    </mat-card>
+     </mat-card>
+   
 </div>

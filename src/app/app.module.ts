@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import {MatCardModule} from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -42,6 +43,7 @@ const routes:Routes = [
     AppRoutingModule,
     MatCardModule,
     MatButtonModule,
+    MatInputModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule
   ],

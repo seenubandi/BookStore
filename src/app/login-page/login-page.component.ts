@@ -12,6 +12,7 @@ export class LoginPageComponent {
   // passWords = new CredentialsService()
   // PasswordsList = this.passWords.Credentials
  
+
   link:string = "err"
 
   mobileErrMsg = ""

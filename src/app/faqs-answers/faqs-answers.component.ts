@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { AnsweresService } from '../answeres.service';
 
 @Component({
   selector: 'app-faqs-answers',
   templateUrl: './faqs-answers.component.html',
   styleUrls: ['./faqs-answers.component.scss']
 })
-export class FaqsAnswersComponent {
+export class FaqsAnswersComponent implements OnInit {
+
+  constructor(private n :AnsweresService) {
+
+  }
+  
+  ngOnInit(): void {
+    
+  }
   faqsArray = [
     {
       "id":1,
@@ -43,4 +52,8 @@ export class FaqsAnswersComponent {
       "answere":"Buying books in Purchase books is very simple. all you have to do is choose book and use UPI or Debit Card to make the payment."
     }
   ]
+  makeBack() {
+    this.n.backPage = true 
+  }
+  
 }
