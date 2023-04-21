@@ -1,13 +1,40 @@
-
 <div class = "bg-container">
     <mat-card class = "mat-card">
-        <h1 class = "heading">Sign Up Here</h1>
+        <!-- <h1 class = "heading">Log In </h1>
         
-        <input type = "text" class = "text form-control" placeholder="Enter your Mobile Number">
+        <input matInput type = "text" class = "text form-control" placeholder="Enter your Mobile Number" (input)="changeMobile(mobile.value)" [value] = mobileNumber #mobile (blur)="checkMobile()">
+        <p >{{mobileErrMsg}}</p>
        
-        <input type = "password" id = "password"class = "text form-control" placeholder="Enter your Password">
-        <input type = "password" id = "password"class = "text form-control" placeholder="Confirm your Password">
-        <!-- <a href = './header'mat-raised-button color="primary">Login</a> -->
-        <a routerLink="/login" mat-raised-button color="primary">Sign Up</a>
-    </mat-card>
+        <input matInput type = "password"   id = "password"class = "text form-control" placeholder="Enter your Password" (input)="changePassword(password.value)" [value] = password1 #password (blur)="checkPassword()">
+        <p>{{passwordErrMsg}}</p>
+        <a routerLink = '../header' mat-raised-button color="primary" (click) = "isLog()">Login</a>
+        <div class = "container d-flex flex-row mt-4">
+            <a routerLink = '/signup' color="primary" class = "primary">Don't you have an account?</a>
+            <a routerLink="/checkPassword" color="primary">Forgot Password</a>
+        </div> -->
+        <form class="example-form">
+            <h1 class = "heading">Sign Up Here </h1>
+            <mat-form-field class="example-full-width">
+              <mat-label>Mobile Number</mat-label>
+              <input matInput placeholder="Enter Your Mobile No" (input)="changeMobile(mobile.value)" [value] = mobileNumber #mobile (blur)="checkMobile()" >
+            </mat-form-field>
+            <p class = "err">{{mobileErrMsg}}</p>
+          
+            <mat-form-field *ngIf = "showSuccess" class="example-full-width">
+              <mat-label>Enter Your Password</mat-label>
+              <input matInput placeholder="Enter Your Password" type="password" (input)="changePassword(password.value)"  #password (blur)="checkPassword()">
+            </mat-form-field>
+            <p class = "err">{{passwordErrMsg}}</p>
+            <mat-form-field class="example-full-width">
+                <mat-label>Confirm Your Password</mat-label>
+                <input matInput placeholder="Enter Your Password again" type="password" (input)="changePassword(password1.value)"  #password1 (blur)="confirmPassword()">
+              </mat-form-field>
+              <p class = "err">{{password1ErrMsg}}</p>
+          </form>
+          
+        <a  mat-raised-button color="primary" routerLink="../login"  class = "mt-2" (click) = "checkSignUp()">Sign Up</a>
+        <p>{{showSuccess ? "true":"false"}}</p>
+        
+     </mat-card>
+   
 </div>

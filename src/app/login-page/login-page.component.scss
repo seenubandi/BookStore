@@ -9,7 +9,6 @@
 }
 .form-control{
     width:300px;
-    margin-bottom:10px;
 }
 .label{
     text-align: left;
@@ -20,7 +19,7 @@
 //     width:140px;
 // }
 .heading{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color:rgb(3, 1, 1);
     font-weight: bold;
     font-size: 30px;
@@ -35,11 +34,30 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    width:450px;
-    padding: 0px 50px ;
+    height: 500px;
+    width:500px;
+    padding: 10px 0px 0px 0px;
     background-color: white;
+    text-align: center;
 }
 .primary{
-    margin-left: 50px;
+    margin-left: 20px;
+}
+.primary1{
+    margin-right: 20px;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 70%;
+  }
+  .err{
+    margin-bottom: 20px;
+  }
+.container{
+justify-content: space-between;
 }

@@ -56,4 +56,5 @@ export class FaqsAnswersComponent implements OnInit {
     this.n.backPage = true 
   }
   
+  
 }
