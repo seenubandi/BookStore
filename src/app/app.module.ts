@@ -18,6 +18,7 @@ import {CredentialsService} from './credentials.service';
 import { KidsComponent } from './kids/kids.component';
 import { FaqsAnswersComponent } from './faqs-answers/faqs-answers.component';
 import { FaqsComponent } from './faqs/faqs.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -45,7 +46,8 @@ const routes:Routes = [
     MatButtonModule,
     MatInputModule,
     RouterModule.forRoot(routes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FlexLayoutModule
   ],
   providers: [AnsweresService],
   bootstrap: [AppComponent]

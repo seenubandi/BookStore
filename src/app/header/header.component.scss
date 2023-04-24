@@ -1,8 +1,8 @@
-.header-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+// .header-container{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+// }
 .header-left{
     display: flex;
     flex-direction: row;
@@ -15,8 +15,8 @@
 }
 .bg-container{
     min-height: 100vh;
-    padding-top: 1%;
-    background-image: url('../assets/bookstore/library4.jpg');
+    padding-top: 5%;
+    background-image: url('../assets/header.jpg');
     background-size: cover;
 }
 .btn-primary{

@@ -20,7 +20,7 @@
 // }
 .heading{
     margin-bottom: 30px;
-    color:rgb(3, 1, 1);
+    color:black;
     font-weight: bold;
     font-size: 30px;
 }
@@ -36,7 +36,7 @@ p{
     align-items: center;
     height: 500px;
     width:500px;
-    padding: 10px 0px 0px 0px;
+    padding: 10px;
     background-color: white;
     text-align: center;
 }
@@ -60,4 +60,7 @@ p{
   }
 .container{
 justify-content: space-between;
+}
+.card2{
+    padding: 5px;
 }

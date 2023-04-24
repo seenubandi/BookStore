@@ -1,9 +1,6 @@
 
 <div class = "bg-container">
-    <div class = "header-container">
-        <div>
-            <h1 href="./header" class = "logo">Purchase Books</h1>
-        </div>
+    <div class = "header-container" fxLayout="row">
         <div class = "header-left">
             <a class = "btn btn-primary ml-1 home" [class.bg]="home" (click) = "makeHome()">Home</a>
             <a class = "btn btn-primary ml-3" [class.bg]="kids"  (click) = 'makeKids()'>Kids Entertainment</a>
@@ -13,7 +10,7 @@
         </div>
         
     </div>
-    <div class = "images p-3">
+    <div class = "images p-3" fxLayout="column">
         <div *ngIf = 'home' class = "faqs" style="color:black" >
             <mat-card  class = "mat-head" >
                 <mat-card-header (click) = "makeKids()" class = "h1">Kids Entertainment</mat-card-header>

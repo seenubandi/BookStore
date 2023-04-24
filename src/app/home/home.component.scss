@@ -1,5 +1,5 @@
 .bg-container{
-    background-image: url('../assets/bookstore/library3.jpg');
+    background-image: url('../assets/library-bag.jpg');
     height:100vh;
     background-size: cover;
     display: flex;
@@ -15,10 +15,11 @@
     background-color: blue;
 }
 .card{
-    padding: 30px;
+    padding: 50px;
     background-color: blue;
     color: white;
     width:600px;
+    border-radius: 90px;
 }
 .heading2{
     font-style: italic;
